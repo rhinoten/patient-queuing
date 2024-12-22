@@ -18,6 +18,7 @@ const ListPage = () => {
         "Severe headache and fever, accompanied by fatigue and chills. The patient also reports sensitivity to light and nausea. Symptoms have been persistent for the last 48 hours and have not improved with over-the-counter medication. A thorough examination is recommended for proper diagnosis.",
       priority: "red",
       doctor: "Dr. Smith",
+      gender: "Male",
     },
     {
       id: 2,
@@ -26,6 +27,7 @@ const ListPage = () => {
         "Mild cough with occasional shortness of breath. The patient has a history of asthma but has not had any recent flare-ups. The cough is dry and persistent, especially at night. There is no fever, but the patient reports feeling generally fatigued.",
       priority: "green",
       doctor: "Dr. Adams",
+      gender: "Female",
     },
     {
       id: 3,
@@ -34,6 +36,7 @@ const ListPage = () => {
         "Experiencing shortness of breath, dizziness, and chest tightness. The patient has a history of smoking and reports increased physical exertion in recent days. The symptoms worsen with physical activity and improve slightly with rest. There is concern for potential cardiovascular issues.",
       priority: "orange",
       doctor: "Dr. Brown",
+      gender: "Male",
     },
     {
       id: 4,
@@ -42,6 +45,7 @@ const ListPage = () => {
         "Severe abdominal pain and bloating, particularly after meals. The patient reports nausea and vomiting with no relief from antacids. The pain is sharp and localized to the lower right quadrant. Family history includes a diagnosis of gallstones, and an ultrasound is advised.",
       priority: "orange",
       doctor: "Dr. Wilson",
+      gender: "Female",
     },
     {
       id: 5,
@@ -50,6 +54,7 @@ const ListPage = () => {
         "Persistent dry eyes, headaches, and occasional blurred vision. The patient works long hours in front of a computer and reports frequent eye strain. Symptoms have worsened in the past month. The patient also reports mild back pain due to poor posture during work hours.",
       priority: "orange",
       doctor: "Dr. Martinez",
+      gender: "Female",
     },
     {
       id: 6,
@@ -58,6 +63,7 @@ const ListPage = () => {
         "Experiencing chronic knee pain, especially after prolonged standing or walking. The patient has a history of mild arthritis and reports stiffness in the morning. Pain is localized to the right knee, with limited mobility and swelling during flare-ups. Physical therapy is recommended.",
       priority: "green",
       doctor: "Dr. Green",
+      gender: "Male",
     },
     {
       id: 7,
@@ -66,6 +72,7 @@ const ListPage = () => {
         "Recent weight gain and increased thirst. The patient also reports frequent urination and fatigue. There is a family history of diabetes, and the patient has not been following a healthy diet. A blood sugar test is necessary to rule out diabetes or prediabetes.",
       priority: "orange",
       doctor: "Dr. Clark",
+      gender: "Female",
     },
     {
       id: 8,
@@ -74,6 +81,7 @@ const ListPage = () => {
         "Painful swelling in the left ankle after an injury during sports. The patient reports difficulty walking and has noticeable bruising. The swelling has not reduced with ice and elevation. X-rays are recommended to rule out any fractures or ligament damage in the ankle.",
       priority: "red",
       doctor: "Dr. Walker",
+      gender: "Male",
     },
   ]);
 
@@ -110,6 +118,9 @@ const ListPage = () => {
             </Typography>
             <Typography sx={styles.detailText}>
               <strong>Description:</strong> {selectedPatient.description}
+            </Typography>
+            <Typography sx={styles.detailText}>
+              <strong>Gender:</strong> {selectedPatient.gender}
             </Typography>
             <Typography sx={styles.detailText}>
               <strong>Priority:</strong>
