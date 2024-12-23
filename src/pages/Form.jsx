@@ -16,6 +16,7 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
     age: "",
+    desc: "",
     gender: "",
     symptoms: [],
   });
@@ -57,10 +58,19 @@ const Form = () => {
         />
         <TextField
           label="Age"
+          type="number"
           fullWidth
           margin="normal"
           value={formData.age}
           onChange={(e) => setFormData({ ...formData, age: e.target.value })}
+          sx={styles.textField}
+        />
+        <TextField
+          label="Description"
+          fullWidth
+          margin="normal"
+          value={formData.desc}
+          onChange={(e) => setFormData({ ...formData, desc: e.target.value })}
           sx={styles.textField}
         />
         <FormControl
